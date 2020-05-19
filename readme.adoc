@@ -1,0 +1,10 @@
+= Dotfiles
+Jucelio Floresta <jucelio.floresta@gmail.com>
+v0.1.0 18-05-2020
+
+My minimal configuration files.
+
+.List of programs
+- Neovim
+- Fish Shell
+- Tmux
