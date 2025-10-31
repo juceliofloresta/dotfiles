@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+  "runtime.version": "LuaJIT",
+  "workspace.checkThirdParty": false,
+  "diagnostics.globals": ["hs", "spoon"],
+  "workspace.library": [
+    "/Applications/Hammerspoon.app/Contents/Resources/extensions",
+    "/Applications/Hammerspoon.app/Contents/Resources/extensions/hs",
+    "${HOME}/.hammerspoon/Spoons"
+  ]
+}
+

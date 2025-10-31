@@ -1,0 +1,16 @@
+[user]
+	email = juceliofloresta@gmail.com
+	name = Jucelio Silva
+	signingkey = ~/.ssh/id_ed25519.pub
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers
+[core]
+	editor = nvim
+[alias]
+	st = status
+    a = add
+    c = commit -S
+    l = log --oneline
+

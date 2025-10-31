@@ -1,0 +1,47 @@
+theme = dark:Catppuccin Mocha,light:Catppuccin Latte
+
+alpha-blending = linear-corrected
+
+font-size = 14
+font-family = Monaspace Krypton NF
+font-style = SemiBold
+font-style-bold = Bold
+font-style-italic = Medium Italic
+font-style-bold-italic = Bold Italic
+font-feature = "-calt"
+
+adjust-cell-height = 6
+adjust-font-baseline = 2
+
+window-padding-x = 4
+window-padding-y = 2
+window-padding-balance = true
+
+shell-integration = zsh
+shell-integration-features = no-cursor
+
+cursor-style = block
+cursor-style-blink = true
+cursor-color = cell-foreground
+cursor-text = cell-background
+
+mouse-hide-while-typing = true
+
+
+# Send sequence Ctrl+a 1, 3, 3 until 9
+keybind = super+physical:one=text:\x011
+keybind = super+physical:two=text:\x012
+keybind = super+physical:three=text:\x013
+keybind = super+physical:four=text:\x014
+keybind = super+physical:five=text:\x015
+keybind = super+physical:six=text:\x016
+keybind = super+physical:seven=text:\x017
+keybind = super+physical:eight=text:\x018
+keybind = super+physical:nine=text:\x019
+
+keybind = alt+right=unbind
+keybind = alt+left=unbind
+keybind = super+d=unbind
+keybind = super+shift+d=unbind
+keybind = super+t=unbind
+keybind = super+n=unbind

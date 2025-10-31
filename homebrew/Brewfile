@@ -1,0 +1,16 @@
+# CLI Tools
+brew "git"
+brew "stow"
+brew "neovim"
+brew "tree"
+brew "htop"
+brew "jq"
+brew "curl"
+brew "wget"
+brew "tmux"
+
+# Fonts
+cask "font-monaspace"
+
+# Applications
+cask "ghostty"
