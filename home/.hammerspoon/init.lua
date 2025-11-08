@@ -3,7 +3,6 @@ hs.hotkey.bind({ "alt", "shift" }, "R", function()
 end)
 
 hs.loadSpoon("MouseFollowsFocus")
-spoon.MouseFollowsFocus:start()
 
 local function setDarkMode(on)
     local script = io.open("./scripts/appearance.applescript", "r"):read("*all")
@@ -18,6 +17,14 @@ hs.hotkey.bind({ "cmd" }, "F2", function()
     setDarkMode(false)
 end)
 
+hs.hotkey.bind({ "cmd" }, "F6", function()
+    hs.caffeinate.lockScreen()
+end)
+
+hs.hotkey.bind({ "cmd", "shift" }, "F6", function()
+    hs.caffeinate.systemSleep()()
+end)
+
 local function openApp(name)
     local app = hs.application.get(name)
 
@@ -28,16 +35,16 @@ local function openApp(name)
     end
 end
 
-local function openSafari()
-    openApp("Safari")
-end
-local function openObsidian()
-    openApp("Obsidian")
-end
-local function openTerminal()
-    openApp("Ghostty")
+local function bindApp(mods, key, appName)
+    hs.hotkey.bind(mods, key, function()
+        openApp(appName)
+    end)
 end
 
-hs.hotkey.bind({ "alt" }, "S", openSafari)
-hs.hotkey.bind({ "alt" }, "O", openObsidian)
-hs.hotkey.bind({ "alt" }, "T", openTerminal)
+bindApp({ "alt" }, "B", "Bitwarden")
+bindApp({ "alt" }, "K", "Amazon Kindle")
+bindApp({ "alt" }, "O", "Obsidian")
+bindApp({ "alt" }, "S", "Safari")
+bindApp({ "alt" }, "T", "Ghostty")
+
+spoon.MouseFollowsFocus:start()
