@@ -3,17 +3,25 @@ theme = dark:Catppuccin Mocha,light:Catppuccin Latte
 alpha-blending = linear-corrected
 
 font-size = 14
-font-family = Monaspace Krypton NF
-font-style = SemiBold
-font-style-bold = Bold
+
+font-family = Monaspace Neon NF
+font-family-bold = Monaspace Neon NF
+
+font-style = Medium
+font-style-bold = ExtraBold
+
+font-family-italic = Monaspace Xenon NF
+font-family-bold-italic = Monaspace Xenon NF
+
 font-style-italic = Medium Italic
-font-style-bold-italic = Bold Italic
-font-feature = "-calt"
+font-style-bold-italic = ExtraBold Italic
+
+font-feature = "calt, -liga"
 
 adjust-cell-height = 6
 adjust-font-baseline = 2
 
-window-padding-x = 4
+window-padding-x = 6
 window-padding-y = 2
 window-padding-balance = true
 
@@ -27,6 +35,8 @@ cursor-text = cell-background
 
 mouse-hide-while-typing = true
 
+window-colorspace = srgb
+bold-color = bright
 
 # Send sequence Ctrl+a 1, 3, 3 until 9
 keybind = super+physical:one=text:\x011
@@ -45,3 +55,4 @@ keybind = super+d=unbind
 keybind = super+shift+d=unbind
 keybind = super+t=unbind
 keybind = super+n=unbind
+keybind = super+,=unbind
